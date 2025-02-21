@@ -10,9 +10,9 @@
         <relativePath/>
     </parent>
     <groupId>com.lauracercas</groupId>
-    <artifactId>prototipoux</artifactId>
+    <artifactId>moviecards</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>prototipoux</name>
+    <name>moviecards</name>
     <description>Aplicacion Base para Integracion continua con GitHub Actions</description>
     <developers>
         <developer>
