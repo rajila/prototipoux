@@ -28,7 +28,7 @@ jobs:
       - name: Guardar paquete generado para el trabajo de despliegue
         uses: actions/upload-artifact@v4
         with:
-          name: java-java
+          name: java-app
           path: "${{ github.workspace }}/target/*.jar"
 
       - name: empaquetado
