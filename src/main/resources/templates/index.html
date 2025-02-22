@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="es"
+      xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>prototipoVuelos</title>
+    <link rel="stylesheet" th:href="@{/resources/style.css}" />
+    <script type="application/javascript" th:src="@{/resources/script.js}"></script>
+</head>
+<body>
+<h1 id="documentTitle">prototipoVuelos</h1>
+<p id="documentMetadata">Exported at: Sat Feb 22 2025 01:44:11 GMT+0100 (hora estándar de Europa central)</p>
+<div class="Page" id="home_page">
+    <h2>Home</h2>
+    <div class="ImageContainer">
+        <img th:src="@{/img/home.png}" width="977" height="726" usemap="#map_home" />
+    </div>
+    <map name="map_home">
+        <area shape="rect" coords="734,339.25,827,365" href="#vuelos_page" title="Go to page 'Vuelos'" />
+        <area shape="rect" coords="598.5,260.5,704.5,290.5" href="#misreservas_page" title="Go to page 'MisReservas'" />
+    </map>
+</div>
+<div class="Page" id="vuelos_page">
+    <h2>Vuelos</h2>
+    <div class="ImageContainer">
+        <img th:src="@{/img/vuelos.png}" width="977" height="726" usemap="#map_vuelos" />
+    </div>
+    <map name="map_vuelos">
+        <area shape="rect" coords="109.75,597.75,863.5,660.5" href="#reservadp_page" title="Go to page 'ReservaDP'" />
+        <area shape="rect" coords="110.5,449.5,862.5,514" href="#reservadp_page" title="Go to page 'ReservaDP'" />
+        <area shape="rect" coords="110.5,521.75,864.5,584.5" href="#reservadp_page" title="Go to page 'ReservaDP'" />
+        <area shape="rect" coords="718,340,854,365.75" href="#home_page" title="Go to page 'Home'" />
+        <area shape="rect" coords="598.5,260.5,704.5,291.25" href="#misreservas_page" title="Go to page 'MisReservas'" />
+        <area shape="rect" coords="476.5,259.75,582.5,290.5" href="#home_page" title="Go to page 'Home'" />
+        <area shape="rect" coords="97,176,156,242" href="#home_page" title="Go to page 'Home'" />
+    </map>
+</div>
+<div class="Page" id="reservadp_page">
+    <h2>ReservaDP</h2>
+    <div class="ImageContainer">
+        <img th:src="@{/img/reservadp.png}" width="977" height="726" usemap="#map_reservadp" />
+    </div>
+    <map name="map_reservadp">
+        <area shape="rect" coords="374,579,464,604.75" href="#reservadpcancelar_page" title="Go to page 'ReservaDPCancelar'" />
+        <area shape="rect" coords="490,578.25,580,604" href="#reservap_page" title="Go to page 'ReservaP'" />
+    </map>
+</div>
+<div class="Page" id="reservap_page">
+    <h2>ReservaP</h2>
+    <div class="ImageContainer">
+        <img th:src="@{/img/reservap.png}" width="977" height="726" usemap="#map_reservap" />
+    </div>
+    <map name="map_reservap">
+        <area shape="rect" coords="374,579,464,604" href="#reservapcancelar_page" title="Go to page 'ReservaPCancelar'" />
+        <area shape="rect" coords="490,578.25,580,604.75" href="#reservafc_page" title="Go to page 'ReservaFC'" />
+        <area shape="rect" coords="318.5,346.5,507.5,376.5" href="#reservadp_page" title="Go to page 'ReservaDP'" />
+    </map>
+</div>
+<div class="Page" id="reservafc_page">
+    <h2>ReservaFC</h2>
+    <div class="ImageContainer">
+        <img th:src="@{/img/reservafc.png}" width="977" height="726" usemap="#map_reservafc" />
+    </div>
+    <map name="map_reservafc">
+        <area shape="rect" coords="439,561,535,587" href="#imprimir_page" title="Go to page 'Imprimir'" />
+    </map>
+</div>
+<div class="Page" id="imprimir_page">
+    <h2>Imprimir</h2>
+    <div class="ImageContainer">
+        <img th:src="@{/img/imprimir.png}" width="977" height="726" usemap="#map_imprimir" />
+    </div>
+    <map name="map_imprimir">
+        <area shape="rect" coords="800,235,822,256" href="#misreservas_page" title="Go to page 'MisReservas'" />
+    </map>
+</div>
+<div class="Page" id="misreservas_page">
+    <h2>MisReservas</h2>
+    <div class="ImageContainer">
+        <img th:src="@{/img/misreservas.png}" width="977" height="726" usemap="#map_misreservas" />
+    </div>
+    <map name="map_misreservas">
+        <area shape="rect" coords="110.5,383.5,862.5,449.5" href="#imprimir_page" title="Go to page 'Imprimir'" />
+        <area shape="rect" coords="476.5,260.5,582.5,290.5" href="#home_page" title="Go to page 'Home'" />
+        <area shape="rect" coords="96.25,176,156,242" href="#home_page" title="Go to page 'Home'" />
+    </map>
+</div>
+<div class="Page" id="reservadpcancelar_page">
+    <h2>ReservaDPCancelar</h2>
+    <div class="ImageContainer">
+        <img th:src="@{/img/reservadpcancelar.png}" width="977" height="726" usemap="#map_reservadpcancelar" />
+    </div>
+    <map name="map_reservadpcancelar">
+        <area shape="rect" coords="362,265,452,290" href="#reservadp_page" title="Go to page 'ReservaDP'" />
+        <area shape="rect" coords="487,265,577,290" href="#vuelos_page" title="Go to page 'Vuelos'" />
+    </map>
+</div>
+<div class="Page" id="reservapcancelar_page">
+    <h2>ReservaPCancelar</h2>
+    <div class="ImageContainer">
+        <img th:src="@{/img/reservapcancelar.png}" width="977" height="726" usemap="#map_reservapcancelar" />
+    </div>
+    <map name="map_reservapcancelar">
+        <area shape="rect" coords="537,285,627,310" href="#vuelos_page" title="Go to page 'Vuelos'" />
+        <area shape="rect" coords="412,285,502,310.75" href="#reservap_page" title="Go to page 'ReservaP'" />
+    </map>
+</div>
+</body>
+</html>
